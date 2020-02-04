@@ -3,12 +3,6 @@
 /* styleford */
 
 
-//page go to top on reload
-window.onbeforeunload = function () {
-	'use strict';
-	window.scrollTo(0, 0);
-};
-
 //******************** Start Loading screen **************************************
 $(window).on('load', function () {
 	'use strict';
@@ -19,6 +13,8 @@ $(window).on('load', function () {
 		
 		// remove loading div from Html
 		$(this).remove();
+		//page go to top on reload
+		window.scrollTo(0, 0);
 		
 		
 	});
