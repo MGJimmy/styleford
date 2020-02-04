@@ -310,7 +310,7 @@ a:hover {text-decoration: none;}
   background-size: cover;
 }
 .sec_name.watches {
-  background: url(../images/watches/watches_cover.jpg) center no-repeat center fixed;
+  background: url(../images/watches/watches_cover.jpg) center center  no-repeat fixed;
   height: 100vh;
   background-size: cover;
 }
