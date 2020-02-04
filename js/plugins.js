@@ -12,10 +12,7 @@ $(window).on('load', function () {
 		$('body,html').css('overflow', 'auto');
 		
 		// remove loading div from Html
-		$(this).remove();
-		//page go to top on reload
-		window.scrollTo(0, 0);
-		
+		$(this).remove();		
 		
 	});
 	
@@ -24,7 +21,11 @@ $(window).on('load', function () {
 
 //******************** End Loading screen ******************************************
 
-
+//page go to top on reload
+window.onbeforeunload = function () {
+	'use strict';
+	window.scrollTo(0, 0);
+};
 
 
 $(document).ready(function () {
