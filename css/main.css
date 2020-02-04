@@ -1,0 +1,529 @@
+/************************* StyleFord ******************************/
+*{ 
+    box-sizing: border-box;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;  
+}
+
+
+body,html {
+    width: 100%;
+    font-family: Poppins, sans-serif, Montserrat;
+    overflow: hidden;
+    overflow-x: hidden !important;
+}
+
+
+
+/*--------------------------------------------------
+--------------- Start my library  ------------------
+----------------------------------------------------*/       
+a {color: #999;}
+a:hover {color: #b48619;}
+a:focus {color: #b48619;}
+.my_p {color: #777;font-size: 14px;}
+.my_h {color: #b48619;}
+i {cursor: pointer;}
+.new_arrivals .my_p,
+.sections .my_p,
+.testimonials p {width: 50%;}
+
+.main_color {color: #b48619;}
+.second_color {color: #777;}
+
+/**************************************************
+***************** End my library ******************
+***************************************************/
+
+
+
+
+
+
+/*--------------------------------------------------
+----------- Start overriding bootstrab -------------
+----------------------------------------------------*/
+
+a:hover {text-decoration: none;}
+
+.navbar {
+  background: rgb(0, 0, 0, 0.7);
+  color: #fff;
+  z-index: 9999;
+  position: absolute;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .active > .nav-link {color: #b48619; border-bottom: 1px solid #b48619; }
+.navbar-brand span {color: #b48619;}
+
+.navbar-collapse {font-size: 12px;}
+
+.navbar-dark .navbar-nav .nav-link {color: #fff;}
+
+.form-control:focus {box-shadow: none;}
+
+
+.card {background: none;}
+
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/**************************************************
+************* End overriding bootstrab ************
+***************************************************/
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------
+---------------- Start my style --------------------
+----------------------------------------------------*/
+
+
+/*-------------- Start sale -------------*/
+.header-top {
+  background-color: rgba(0,0,0,0.8); 
+  color: #999;
+  top: 0;
+  z-index: 9999;
+  font-size: 15px;
+}
+.header-top .sale span {color: #b48619;}
+
+.header-top .social i{cursor: pointer;}
+.header-top .social i:hover {color: #b48619;}
+
+
+/*************** End sale ******************/
+
+
+/*-------------- Start navbar -------------*/
+
+.navbar .nav_icons form {top: 43px; right: 30px; display: none;}
+.navbar .nav_icons i {cursor: pointer;}
+.navbar .nav_icons i:hover {color: #b48619;}
+
+.navbar .nav_icons .close_icon {left: 10px; top: 3px;}
+.navbar .nav_icons .close_icon:hover {color: rgb(190, 0, 0);}
+.opacity_0 {opacity: 0; z-index: -1;}
+
+.navbar .nav_icons form input {
+  background-color: rgba(0,0,0,0.7);
+  border: 1px solid #000;
+  color: #fff;
+  border-radius: 20px;
+  width: 250px;
+  padding-right: 30px;
+}
+.navbar .nav_icons form button {
+  background: none;
+  color: #b48619;
+  right: 15px;
+  top: 6px;
+  border: none;
+}
+
+
+
+
+
+/*************** End navbar ***************/
+
+
+
+/*-------------- Start carousel -----------*/
+.carousel {background-color: #121113;}
+.carousel .carousel-item .text {top: 200px; right: 160px;}
+
+.carousel .carousel-item .text p:nth-child(1) { font-size: 25px;}
+.carousel .carousel-item .text p:nth-child(2) { font-size: 70px;}
+.carousel .carousel-item .text p:nth-child(3) { font-size: 15px; letter-spacing: 10px;}
+.carousel .carousel-item .text button {
+  background: none;
+  padding: 7px 35px;
+  border: 1px solid #fff;
+  font-size: 12px;
+  outline: none;
+}
+.carousel .carousel-item .text button:hover {
+  background-color: #b48619;
+  border: 1px solid #b48619;
+}
+
+/*************** End carousel ***************/
+
+/*-------------- Start new arrivals -----------*/
+
+.new_arrivals {padding: 100px 0;}
+
+.new_arrivals .text .price {color: rgb(0, 0, 0); font-weight: bold;}
+.new_arrivals .ad {cursor: pointer;}
+.new_arrivals .ad:hover .image {transform: scale(1.05);}
+.new_arrivals .ad:hover .price {color: rgb(190, 0, 0);}
+
+/********** End new arrivals  *****************/
+
+/*-------------- Start sections -------------*/
+.sections {padding: 100px 0;}
+
+.sections *:not(a) {
+  -webkit-transition: all 1.5s;
+  -moz-transition: all 1.5s;
+  -o-transition: all 1.5s;
+  transition: all 1.5s;  
+}
+
+.sections .bg .bg_image {
+  position: inherit;
+  z-index: 1;
+  background-size: cover;
+  background-position: center;
+}
+
+.sections .overlay {
+  position: inherit;
+  background-color: rgb(0, 0, 0, 0.2);
+  z-index: 2;
+  opacity: 0;
+}
+
+.sections .content {
+  z-index: 2; 
+  color: #555;
+  top: 60px;
+  left: 35px;
+}
+
+.sections .content p {font-size: 25px;}
+.sections .content a {
+  color: #555;
+  font-size: 20px;
+  border-bottom: 2px solid;
+}
+.sections .content a:hover {color: #b48619;}
+
+.sections .row > div:hover .bg_image {transform: translateX(15%);}
+
+.sections .row > div:hover  .overlay {opacity: 1;}
+
+/*+++++++++++++++++++++++++++*/
+.sections .womens {height: 300px;background-color: #f8f6f7;}
+.sections .womens .bg .bg_image {background-image: url(../images/bg_sections/01.jpg);}
+
+.sections .men {height: 300px;background-color: #f2d4b0;}
+.sections .men .bg .bg_image {background-image: url(../images/bg_sections/02.jpg);}
+
+.sections .kids {height: 300px;background-color: #f4f4f4;}
+.sections .kids .bg .bg_image {background-image: url(../images/bg_sections/03.jpg);}
+
+.sections .shoes {height: 300px;background-color: #f4f4f4;}
+.sections .shoes .bg .bg_image {background-image: url(../images/bg_sections/04.jpg);}
+
+.sections .watches {height: 300px;background-color: #e7eaef;}
+.sections .watches .bg .bg_image {background-image: url(../images/bg_sections/05.jpg);}
+
+.sections .shirts {height: 300px;background-color: #4984ac;}
+.sections .shirts .bg .bg_image {background-image: url(../images/bg_sections/06.jpg);}
+
+.sections .accessories {height: 300px;background-color: #f2d4b0;}
+.sections .accessories .bg .bg_image {background-image: url(../images/bg_sections/07.jpg);}
+
+.sections .bags {height: 300px;background-color: #f9f9f9;}
+.sections .bags .bg .bg_image {background-image: url(../images/bg_sections/08.jpg);}
+
+.sections .coolmax {height: 300px;background-color: #dbe9e9;}
+.sections .coolmax .bg .bg_image {background-image: url(../images/bg_sections/10.jpg);}
+
+/********** End sections  *****************/
+
+/*------------ Start testimonials -------------*/
+.testimonials {
+  background: url(../images/testimonials.jpg) center center no-repeat fixed;
+  background-size: cover;
+  padding: 50px 0;
+}
+
+.testimonials .title {margin-bottom: 100px;}
+
+
+/************ End testimonials *****************/
+
+
+
+/*------------ Start services ----------------*/
+.services {padding: 100px 0;}
+.services .box:hover {box-shadow: 10px 10px 10px;}
+
+/*************** End services *****************/
+
+
+/*---------------- Start footer -------------*/
+
+.footer .contact {background-color: #222; padding: 100px 0;}
+.footer h5 {border-bottom: 1px solid #5f5f5f; font-size: 15px;}
+
+.footer .contact input, 
+.footer .contact button {background: none; border: 1px solid #5f5f5f;}
+.footer .contact button:hover {background-color: #b48619;}
+.footer li {cursor: pointer;}
+.footer li:hover {color: #b48619; padding-left: 5px;}
+
+.footer .copyright {background-color: #000;}
+.footer a {color: #FFF;}
+
+
+/*************** End footer *****************/
+
+
+
+
+/*---------------- Start pages  -------------*/
+/*-------------------------------------------*/
+/*---------------- Start section name -------------*/
+
+.sec_name.clothes {
+  background: url(../images/clothes/clothes_cover.jpg) center center no-repeat fixed;
+  height: 100vh;
+  background-size: cover;
+}
+.sec_name.sport {
+  background: url(../images/sport/sport_cover.jpg) center center no-repeat fixed;
+  height: 100vh;
+  background-size: cover;
+}
+.sec_name.shoes {
+  background: url(../images/shoes/shoes_cover.jpg) center center no-repeat fixed;
+  height: 100vh;
+  background-size: cover;
+}
+.sec_name.watches {
+  background: url(../images/watches/watches_cover.jpg) center no-repeat center fixed;
+  height: 100vh;
+  background-size: cover;
+}
+.sec_name.bags {
+  background: url(../images/bags/bags_cover.jpg) center center no-repeat fixed;
+  height: 100vh;
+  background-size: cover;
+}
+
+
+.sec_name .overlay {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgb(0, 0, 0, 0.4);
+}
+
+.sec_name .text {
+  bottom: 30%;
+  left: 50%;
+  z-index: 2;
+  -webkit-transform: translate(-50%, -30%);
+  -moz-transform: translate(-50%, -30%);
+  -ms-transform: translate(-50%, -30%);
+  -o-transform: translate(-50%, -30%);
+  transform: translate(-50%, -30%);
+}
+.sec_name .text h1 {font-size: 80px;}
+.sec_name .text a {font-size: 20px;  color: #fff; border-right: 1px solid #fff;}
+.sec_name .text span {font-size: 20px; color: #b48619;}
+.sec_name .text a:hover {color: #b48619;}
+/*************** End section name *****************/
+
+/*---------------- Start section content  -------------*/
+.sec_content { margin-bottom: 100px;}
+.sec_content .sec_head {background-color: #f5f5f5;}
+.sec_content .sec_head a:hover {color: #;}
+
+/*--------------- side ------------*/
+.sec_content .side h5 {color: #b48619; border-top: 4px solid;}
+.sec_content .side a:hover{color: #b48619;}
+.sec_content .side label {color: #555;}
+.sec_content .side button {
+  background-color: rgb(43, 43, 43);
+  color: #FFF;
+  border: none;
+  padding: 5px 20px;
+}
+.sec_content .side button:hover {background-color: #b48619;}
+
+/*-------------- porducts ----------*/
+.sec_content .products .box .top {left: 0; top: 0;} 
+.sec_content .products .quickview {
+  background-color: rgb(0, 0, 0, 0.7);
+  bottom: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+.sec_content .products .quickview:hover {background-color: #b48619; color: #000;}
+
+.sec_content .products .option {opacity: 0;}
+.sec_content .products .option .add_chart {cursor: pointer;}
+.sec_content .products .option .add_chart:hover {color: #b48619;}
+.sec_content .products .option .fav {cursor: pointer;}
+.sec_content .products .option .fav:hover {color: #dc3545;}
+
+.sec_content .products .box:hover .top {opacity: 0;}
+.sec_content .products .box:hover .quickview {opacity: 1;}
+.sec_content .products .box:hover .option {opacity: 1;}
+
+
+/*************** End section content ******************/
+
+
+
+
+/*************** End pages *****************/
+/*******************************************/
+
+/**************************************************
+******************* End my style ******************
+***************************************************/
+
+
+
+
+
+/*---------------- Start  -------------*/
+
+/*************** End  *****************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/****** Start scroll to top *******/
+
+.scroll_top {
+  width: 40px;
+  height: 40px;
+  background: rgb(0, 0, 0);
+  color: #FFF;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 99999;
+  font-size: 15px;
+  line-height: 40px;
+  box-shadow: 0 0 5px 2px #3a3a3a;
+  cursor: pointer;
+  display: none;
+    
+}
+.scroll_top:hover {background: #b48619;}
+/****** End scroll to top *********/
+
+
+
+/****** Start loading screen ******/
+.loading {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999999;
+  background-color: rgb(0, 0, 0);
+}
+
+.loading .loading_position {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.sk-chase {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  animation: sk-chase 2.5s infinite linear both;
+}
+
+.sk-chase-dot {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0; 
+  animation: sk-chase-dot 2.0s infinite ease-in-out both; 
+}
+
+.sk-chase-dot:before {
+  content: '';
+  display: block;
+  width: 25%;
+  height: 25%;
+  background-color: #b48619;
+  border-radius: 100%;
+  animation: sk-chase-dot-before 2.0s infinite ease-in-out both; 
+}
+
+.sk-chase-dot:nth-child(1) { animation-delay: -1.1s; }
+.sk-chase-dot:nth-child(2) { animation-delay: -1.0s; }
+.sk-chase-dot:nth-child(3) { animation-delay: -0.9s; }
+.sk-chase-dot:nth-child(4) { animation-delay: -0.8s; }
+.sk-chase-dot:nth-child(5) { animation-delay: -0.7s; }
+.sk-chase-dot:nth-child(6) { animation-delay: -0.6s; }
+.sk-chase-dot:nth-child(1):before { animation-delay: -1.1s; }
+.sk-chase-dot:nth-child(2):before { animation-delay: -1.0s; }
+.sk-chase-dot:nth-child(3):before { animation-delay: -0.9s; }
+.sk-chase-dot:nth-child(4):before { animation-delay: -0.8s; }
+.sk-chase-dot:nth-child(5):before { animation-delay: -0.7s; }
+.sk-chase-dot:nth-child(6):before { animation-delay: -0.6s; }
+
+@keyframes sk-chase {
+  100% { transform: rotate(360deg); } 
+}
+
+@keyframes sk-chase-dot {
+  80%, 100% { transform: rotate(360deg); } 
+}
+
+@keyframes sk-chase-dot-before {
+  50% {
+    transform: scale(0.4); 
+  } 100%, 0% {
+    transform: scale(1.0); 
+  } 
+}
+
+/****** End loading screen ********/
+
+
+/*********************** End my style ************************/
+

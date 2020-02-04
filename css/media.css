@@ -1,0 +1,71 @@
+
+/* XS screen */
+@media(max-width: 576px) {
+   p,
+   .footer .copyright  {font-size: 10px;}
+   .my_h {font-size: 20px;}
+   .new_arrivals .my_p,
+   .sections .my_p,
+   .testimonials p {width: 75%; font-size: 10px;}
+
+   .navbar-dark .navbar-nav .nav-link:hover,
+   .navbar-dark .navbar-nav .active > .nav-link { border-bottom: none;}
+
+   .header-top {font-size: 10px;}
+
+   .navbar, .navbar-brand, .navbar-toggler, .navbar-collapse {font-size: 12px;}
+
+   .carousel .carousel-item .text {top: 80px; right: 40px;}
+   .carousel .carousel-item .text p:nth-child(1) {font-size: 8px;}
+   .carousel .carousel-item .text p:nth-child(2) {font-size: 15px;}
+   .carousel .carousel-item .text p:nth-child(3) {font-size: 8px; letter-spacing: 3px;}
+   .carousel .carousel-item .text button {padding: 5px 15px; font-size: 8px;}
+   
+}
+
+
+/* Mobile screen */
+@media(min-width: 577px) and (max-width: 767px) {
+   .my_p {font-size: 10px;}
+   .my_h {font-size: 20px;}
+
+   .navbar-dark .navbar-nav .nav-link:hover,
+   .navbar-dark .navbar-nav .active > .nav-link { border-bottom: none;}
+
+   .navbar, .navbar-brand, .navbar-toggler, .navbar-collapse {font-size: 12px;}
+
+   .carousel .carousel-item .text {top: 80px; right: 40px;}
+   .carousel .carousel-item .text p:nth-child(1) {font-size: 8px;}
+   .carousel .carousel-item .text p:nth-child(2) {font-size: 15px;}
+   .carousel .carousel-item .text p:nth-child(3) {font-size: 8px; letter-spacing: 3px;}
+   .carousel .carousel-item .text button {padding: 5px 15px; font-size: 8px;}
+ 
+   
+}
+
+
+
+/* Small screen */
+@media(min-width: 768px) and (max-width: 991px) {
+   .my_p {font-size: 10px;}
+   .my_h {font-size: 20px;}
+
+   .navbar-dark .navbar-nav .nav-link:hover,
+   .navbar-dark .navbar-nav .active > .nav-link { border-bottom: none;}
+   
+   .navbar, .navbar-brand, .navbar-toggler,.navbar-collapse {font-size: 12px;}
+   
+}
+
+
+/* Medium screen */
+@media(min-width: 992px) and (max-width: 1199px) {
+    
+}
+
+
+/* Large screen */
+@media(min-width: 1200px) {
+    
+}
+
